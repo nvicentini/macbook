@@ -23,11 +23,11 @@ res = ad.get_data(URL, parameters)
 print(today)
 
 #create directory for saving data if not exists
-if not os.path.exists('data'):
-    os.makedirs('data')
+if not os.path.exists('./data/json/' + str(today)):
+    os.makedirs('./data/json/' + str(today))
 
 #change to saving directory
-os.chdir('./data')
+os.chdir('./data/json/' + str(today))
 
 #save file
 ad.save_jsonlines_to_fs(res, str(today))

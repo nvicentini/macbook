@@ -63,21 +63,50 @@ def json_data_loader(file_list):
 
 
 #open data dir
-os.chdir('./data')
+os.chdir('./data/json')
+
+directories = [x[0] for x in os.walk(".")]
+
+print(directories)
+directories.remove('.')
+print(directories)
+
+for d in directories:
+	os.chdir(d)
+	fecha = d[-10:]
+	print(f"estoy laburando en este directorio: { os.getcwd()}")
+	json_pattern = os.path.join('*.jsonl')
+	file_list = glob.glob(json_pattern)
+	print(file_list)
+	#read all files in directory
+	data = json_data_loader(file_list)
+	#change back to Data directory
+	os.chdir('../../')
+	print(f"ahora me movi a este directorio: { os.getcwd()}")
+	#create directory for saving CSV data if not exists
+	if not os.path.exists('./csv/' + fecha):
+	    os.makedirs('./csv/' + fecha)
+	# #change to saving directory
+	os.chdir('./csv/' + fecha)
+	print(f"ahora me movi a este directorio: { os.getcwd()}")
+	df = pd.DataFrame(data)
+	df.to_csv(fecha + '.csv', index=False)
+	
 
 #target json files
-json_pattern = os.path.join('*.jsonl')
-file_list = glob.glob(json_pattern)
+# json_pattern = os.path.join('*.jsonl')
+# file_list = glob.glob(json_pattern)
 
-#read all data
-data = json_data_loader(file_list)
 
-#create csv file
-#create directory for saving data if not exists
-if not os.path.exists('data/csv'):
-    os.makedirs('data/csv')
+# data = json_data_loader(file_list)
 
-#change to saving directory
-os.chdir('./data/csv')
-df = pd.DataFrame(data)
-df.to_csv('terrain_detail.csv', index=False)
+# # create csv file
+
+# #create directory for saving data if not exists
+# if not os.path.exists('./data/csv/' + str(today)):
+#     os.makedirs('./data/json/' + str(today))
+
+# #change to saving directory
+# os.chdir('./data/json/' + str(today))
+# df = pd.DataFrame(data)
+# df.to_csv('terrain_detail.csv', index=False)
