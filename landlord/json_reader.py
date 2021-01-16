@@ -26,11 +26,8 @@ def search_attribute(attribute_list):
 
 	
 
-def json_data_loader():
+def json_data_loader(file_list):
     # pd.set_option('display.max_columns', None)
-    #target json files
-    json_pattern = os.path.join('*.jsonl')
-    file_list = glob.glob(json_pattern)
     #open a list
     terrains = []
     for file in file_list:
@@ -54,8 +51,6 @@ def json_data_loader():
 		        		city_name = result['address']['city_name']
 		        		address_line = result['location']['address_line']
 		        		neighborhood_name =  result['location']['neighborhood']['name']
-		        		# city_name = result['location']['city']['name']
-		        		# state_name = result['location']['state']['name']
 		        		country_id = result['location']['country']['id']
 		        		country_name = result['location']['country']['name']
 		        		latitude = result['location']['latitude']
@@ -67,9 +62,22 @@ def json_data_loader():
     return terrains
 
 
+#open data dir
 os.chdir('./data')
-data = json_data_loader()
 
+#target json files
+json_pattern = os.path.join('*.jsonl')
+file_list = glob.glob(json_pattern)
 
+#read all data
+data = json_data_loader(file_list)
+
+#create csv file
+#create directory for saving data if not exists
+if not os.path.exists('data/csv'):
+    os.makedirs('data/csv')
+
+#change to saving directory
+os.chdir('./data/csv')
 df = pd.DataFrame(data)
 df.to_csv('terrain_detail.csv', index=False)
