@@ -10,8 +10,7 @@ import api_downloader as ad
 URL = "https://api.mercadolibre.com/sites/MLA/search?category=MLA1495"
 
 
-print('Creando la carpeta Data')
-# os.chdir('./data')
+
 print("Buscando las regiones")
 regiones = ad.get_regiones(URL)
 localidades_por_region = ad.get_localidades_por_region(URL, regiones)

@@ -1,0 +1,126 @@
+01/17/2021 11:07:42 AM Making a request
+01/17/2021 11:07:42 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:43 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=0&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:43 AM Status code: 200
+01/17/2021 11:07:43 AM grabando archivo en formato jsonlines: 2021-01-17
+01/17/2021 11:07:43 AM archivo grabado: 2021-01-17 
+01/17/2021 11:07:43 AM Making a request
+01/17/2021 11:07:43 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:43 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=50&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:43 AM Status code: 200
+01/17/2021 11:07:43 AM grabando archivo en formato jsonlines: 2021-01-17_1
+01/17/2021 11:07:43 AM archivo grabado: 2021-01-17_1 
+01/17/2021 11:07:43 AM Making a request
+01/17/2021 11:07:43 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:44 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=100&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:44 AM Status code: 200
+01/17/2021 11:07:44 AM grabando archivo en formato jsonlines: 2021-01-17_2
+01/17/2021 11:07:44 AM archivo grabado: 2021-01-17_2 
+01/17/2021 11:07:44 AM Making a request
+01/17/2021 11:07:44 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:44 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=150&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:44 AM Status code: 200
+01/17/2021 11:07:44 AM grabando archivo en formato jsonlines: 2021-01-17_3
+01/17/2021 11:07:44 AM archivo grabado: 2021-01-17_3 
+01/17/2021 11:07:44 AM Making a request
+01/17/2021 11:07:44 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:45 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=200&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:45 AM Status code: 200
+01/17/2021 11:07:45 AM grabando archivo en formato jsonlines: 2021-01-17_4
+01/17/2021 11:07:45 AM archivo grabado: 2021-01-17_4 
+01/17/2021 11:07:45 AM Making a request
+01/17/2021 11:07:45 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:45 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=250&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:45 AM Status code: 200
+01/17/2021 11:07:45 AM grabando archivo en formato jsonlines: 2021-01-17_5
+01/17/2021 11:07:45 AM archivo grabado: 2021-01-17_5 
+01/17/2021 11:07:45 AM Making a request
+01/17/2021 11:07:45 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:46 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=300&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:46 AM Status code: 200
+01/17/2021 11:07:46 AM grabando archivo en formato jsonlines: 2021-01-17_6
+01/17/2021 11:07:46 AM archivo grabado: 2021-01-17_6 
+01/17/2021 11:07:46 AM Making a request
+01/17/2021 11:07:46 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:46 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=350&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:46 AM Status code: 200
+01/17/2021 11:07:46 AM grabando archivo en formato jsonlines: 2021-01-17_7
+01/17/2021 11:07:46 AM archivo grabado: 2021-01-17_7 
+01/17/2021 11:07:46 AM Making a request
+01/17/2021 11:07:46 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:47 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=400&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:47 AM Status code: 200
+01/17/2021 11:07:47 AM grabando archivo en formato jsonlines: 2021-01-17_8
+01/17/2021 11:07:47 AM archivo grabado: 2021-01-17_8 
+01/17/2021 11:07:47 AM Making a request
+01/17/2021 11:07:47 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:47 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=450&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:47 AM Status code: 200
+01/17/2021 11:07:47 AM grabando archivo en formato jsonlines: 2021-01-17_9
+01/17/2021 11:07:47 AM archivo grabado: 2021-01-17_9 
+01/17/2021 11:07:47 AM Making a request
+01/17/2021 11:07:47 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:48 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=500&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:48 AM Status code: 200
+01/17/2021 11:07:48 AM grabando archivo en formato jsonlines: 2021-01-17_10
+01/17/2021 11:07:48 AM archivo grabado: 2021-01-17_10 
+01/17/2021 11:07:48 AM Making a request
+01/17/2021 11:07:48 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:48 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=550&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:48 AM Status code: 200
+01/17/2021 11:07:48 AM grabando archivo en formato jsonlines: 2021-01-17_11
+01/17/2021 11:07:48 AM archivo grabado: 2021-01-17_11 
+01/17/2021 11:07:48 AM Making a request
+01/17/2021 11:07:48 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:48 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=600&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:48 AM Status code: 200
+01/17/2021 11:07:48 AM grabando archivo en formato jsonlines: 2021-01-17_12
+01/17/2021 11:07:48 AM archivo grabado: 2021-01-17_12 
+01/17/2021 11:07:48 AM Making a request
+01/17/2021 11:07:48 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:49 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=650&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:49 AM Status code: 200
+01/17/2021 11:07:49 AM grabando archivo en formato jsonlines: 2021-01-17_13
+01/17/2021 11:07:49 AM archivo grabado: 2021-01-17_13 
+01/17/2021 11:07:49 AM Making a request
+01/17/2021 11:07:49 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:49 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=700&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:49 AM Status code: 200
+01/17/2021 11:07:49 AM grabando archivo en formato jsonlines: 2021-01-17_14
+01/17/2021 11:07:49 AM archivo grabado: 2021-01-17_14 
+01/17/2021 11:07:49 AM Making a request
+01/17/2021 11:07:49 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:50 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=750&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:50 AM Status code: 200
+01/17/2021 11:07:50 AM grabando archivo en formato jsonlines: 2021-01-17_15
+01/17/2021 11:07:50 AM archivo grabado: 2021-01-17_15 
+01/17/2021 11:07:50 AM Making a request
+01/17/2021 11:07:50 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:50 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=800&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:50 AM Status code: 200
+01/17/2021 11:07:50 AM grabando archivo en formato jsonlines: 2021-01-17_16
+01/17/2021 11:07:50 AM archivo grabado: 2021-01-17_16 
+01/17/2021 11:07:50 AM Making a request
+01/17/2021 11:07:50 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:50 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=850&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:50 AM Status code: 200
+01/17/2021 11:07:50 AM grabando archivo en formato jsonlines: 2021-01-17_17
+01/17/2021 11:07:50 AM archivo grabado: 2021-01-17_17 
+01/17/2021 11:07:50 AM Making a request
+01/17/2021 11:07:50 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:51 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=900&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:51 AM Status code: 200
+01/17/2021 11:07:51 AM grabando archivo en formato jsonlines: 2021-01-17_18
+01/17/2021 11:07:51 AM archivo grabado: 2021-01-17_18 
+01/17/2021 11:07:51 AM Making a request
+01/17/2021 11:07:51 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:51 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=950&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:51 AM Status code: 200
+01/17/2021 11:07:51 AM grabando archivo en formato jsonlines: 2021-01-17_19
+01/17/2021 11:07:51 AM archivo grabado: 2021-01-17_19 
+01/17/2021 11:07:51 AM Making a request
+01/17/2021 11:07:51 AM Starting new HTTPS connection (1): api.mercadolibre.com:443
+01/17/2021 11:07:52 AM https://api.mercadolibre.com:443 "GET /sites/MLA/search?category=MLA1495&offset=1000&since=today HTTP/1.1" 200 None
+01/17/2021 11:07:52 AM Status code: 200
+01/17/2021 11:07:52 AM grabando archivo en formato jsonlines: 2021-01-17_20
+01/17/2021 11:07:52 AM archivo grabado: 2021-01-17_20 

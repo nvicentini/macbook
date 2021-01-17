@@ -5,6 +5,8 @@ import numpy as np
 from pathlib import Path
 import os
 import jsonlines
+import logging
+
 
 
 
@@ -15,17 +17,19 @@ def get_data(url,parameters):
     whole API answer 
     """
     #request
+    logging.info("Making a request")
     response = requests.get(url, parameters)
-    # print(response.headers['content-type'])#application/json;charset=UTF-8
+    logging.info(f"Status code: {response.status_code}")
     # print(response.encoding)#UTF-8
     if (response.status_code == 200):
         return response.json()
 
 
 def get_regiones(url):
+    logging.info("Making a request")
     response = requests.get(url)
-    print(response.url)
-    print(f"response status: {response.status_code}")
+    logging.info(f"Targeted URL: {response.url}")
+    logging.info(f"Status code: {response.status_code}")
     regiones = []
     if (response.status_code == 200):
         data = response.json()
@@ -34,7 +38,6 @@ def get_regiones(url):
             if filter_['id'] == 'state':
                 for item in filter_['values']:
                     regiones.append(item)
-    # print(f"Regiones -->{regiones} ")
     return regiones
 
 
@@ -86,10 +89,10 @@ def save_json_to_fs(json_data, file_name):
 def save_jsonlines_to_fs(json_data, file_name):    
     """Saves jsonlines files to data directory
     recieves json data and a file name"""
-    print(f"grabando archivo en formato jsonlines: {file_name}")
+    logging.info(f"grabando archivo en formato jsonlines: {file_name}")
     with jsonlines.open( file_name + '.jsonl', mode='w') as writer:
         writer.write(json_data)
-    print(f"archivo grabado")
+    logging.info(f"archivo grabado: {file_name} ")
 
     
 
