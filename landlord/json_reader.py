@@ -7,6 +7,7 @@ import glob
 import matplotlib.pyplot as plt
 
 def search_attribute(attribute_list):
+	size, size_num, size_unit = 0,0,None
 	for ele in attribute_list:
 		if ele['id'] == 'TOTAL_AREA' or ele['id'] == 'MAX_TOTAL_AREA' :
 			try:
@@ -39,7 +40,7 @@ def json_data_loader(file_list):
         		if json_data['results']:
 		        	for i,result in enumerate(json_data['results']):
 		        		row = []
-		        		print(f"resultado Nº {i}")
+		        		# print(f"resultado Nº {i}")
 		        		# print((result['id'], result['title'], result['price']))
 		        		_id = result['id']
 		        		title = result['title']
@@ -65,12 +66,11 @@ def json_data_loader(file_list):
 #open data dir
 os.chdir('./data/json')
 
+#create a list of directories in file
 directories = [x[0] for x in os.walk(".")]
-
-print(directories)
 directories.remove('.')
-print(directories)
 
+#open each file, extract usefull information and create a csv
 for d in directories:
 	os.chdir(d)
 	fecha = d[-10:]
@@ -91,22 +91,3 @@ for d in directories:
 	print(f"ahora me movi a este directorio: { os.getcwd()}")
 	df = pd.DataFrame(data)
 	df.to_csv(fecha + '.csv', index=False)
-	
-
-#target json files
-# json_pattern = os.path.join('*.jsonl')
-# file_list = glob.glob(json_pattern)
-
-
-# data = json_data_loader(file_list)
-
-# # create csv file
-
-# #create directory for saving data if not exists
-# if not os.path.exists('./data/csv/' + str(today)):
-#     os.makedirs('./data/json/' + str(today))
-
-# #change to saving directory
-# os.chdir('./data/json/' + str(today))
-# df = pd.DataFrame(data)
-# df.to_csv('terrain_detail.csv', index=False)

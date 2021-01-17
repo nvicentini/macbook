@@ -26,14 +26,14 @@ def get_regiones(url):
     response = requests.get(url)
     print(response.url)
     print(f"response status: {response.status_code}")
+    regiones = []
     if (response.status_code == 200):
         data = response.json()
-    filters = data['available_filters']
-    regiones = []
-    for filter_ in filters:
-        if filter_['id'] == 'state':
-            for item in filter_['values']:
-                regiones.append(item)
+        filters = data['available_filters']
+        for filter_ in filters:
+            if filter_['id'] == 'state':
+                for item in filter_['values']:
+                    regiones.append(item)
     # print(f"Regiones -->{regiones} ")
     return regiones
 
@@ -47,15 +47,14 @@ def get_localidades_por_region(url, regiones):
         response = requests.get(url, parameters)
         if (response.status_code == 200):
             data = response.json()
-        filters = data['available_filters']
-        localidades = []
-        for filter_ in filters:
-            if filter_['id'] == 'city':
-                for item in filter_['values']:
-                    localidades.append(item)
-        # print(f"localidades: {localidades}")
-        dicc[name_region] =  localidades
-
+            filters = data['available_filters']
+            localidades = []
+            for filter_ in filters:
+                if filter_['id'] == 'city':
+                    for item in filter_['values']:
+                        localidades.append(item)
+                # print(f"localidades: {localidades}")
+                dicc[name_region] =  localidades
     return dicc
 
 def get_tamanos(url, parameters):
@@ -63,15 +62,15 @@ def get_tamanos(url, parameters):
     response = requests.get(url, parameters)
     print(response.url)
     # print(f"response status: {response.status_code}")
-    if (response.status_code == 200):
-      data = response.json()
-    filters = data['available_filters']
     tamano = []
-    for filter_ in filters:
-    #print(filter_)
-      if filter_['id'] == 'TOTAL_AREA':
-          for item in filter_['values']:
-              tamano.append(item)
+    if (response.status_code == 200):
+        data = response.json()
+        filters = data['available_filters']
+        for filter_ in filters:
+        #print(filter_)
+            if filter_['id'] == 'TOTAL_AREA':
+                for item in filter_['values']:
+                    tamano.append(item)
     return tamano
 
 
