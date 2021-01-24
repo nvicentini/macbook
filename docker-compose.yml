@@ -142,8 +142,8 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      #- ./airflow/dags:/usr/local/airflow/dags
-      - ./landlord://usr/local/landlord
+      - ./airflow/dags:/usr/local/airflow/dags
+      - ./landlord:/usr/local/landlord
 
 volumes:
   postgres-data:
