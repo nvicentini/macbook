@@ -3,8 +3,6 @@ from datetime import datetime
 from pathlib import Path
 
 from airflow.models import DAG
-from airflow.operators.bash_operator import BashOperator
-from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python_operator import PythonOperator
 
 import datos_diarios as dd
