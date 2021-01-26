@@ -12,7 +12,7 @@ import logging
 
 def get_data(url,parameters):
     """
-    recieves a date and runs an api request,
+    recieves an URL and runs an api request,
     if status is 200 then returns the 
     whole API answer 
     """
