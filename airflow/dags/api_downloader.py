@@ -9,7 +9,6 @@ import logging
 
 
 
-
 def get_data(url,parameters):
     """
     recieves an URL and runs an api request,

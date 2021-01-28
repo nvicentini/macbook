@@ -1,4 +1,8 @@
 """Datos diarios dag."""
+import os
+import sys
+sys.path.insert(0,os.path.abspath(os.path.dirname(__file__)))
+
 from datetime import datetime
 from pathlib import Path
 
@@ -13,7 +17,7 @@ Path.mkdir(STORE_DIR, exist_ok=True, parents=True)
 
 
 
-default_args = {'owner': 'Nico', 'retries': 0, 'start_date': datetime(2020, 4, 10)}
+default_args = {'owner': 'Nico', 'retries': 0, 'start_date': datetime(2021, 1, 1)}
 with DAG(
     'random_number', default_args=default_args, schedule_interval='0 0 * * *'
 ) as dag:

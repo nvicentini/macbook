@@ -46,3 +46,5 @@ def request_diario():
             parameters['offset']=offset*50
             data = ad.get_data(URL, parameters)
             ad.save_jsonlines_to_fs(data, str(today) + "_" + str(offset))
+
+
