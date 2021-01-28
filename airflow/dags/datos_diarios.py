@@ -5,7 +5,6 @@ import numpy as np
 from pathlib import Path
 import os
 from datetime import date
-import jsonlines
 import api_downloader as ad
 import logging
 

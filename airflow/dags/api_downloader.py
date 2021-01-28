@@ -3,7 +3,6 @@ import json
 import time
 import numpy as np
 from pathlib import Path
-import os
 import jsonlines
 import logging
 

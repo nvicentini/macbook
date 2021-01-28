@@ -1,5 +1,5 @@
 """Datos diarios dag."""
-import os
+
 
 from datetime import datetime
 from pathlib import Path
@@ -21,12 +21,12 @@ with DAG(
 ) as dag:
     descarga_datos_diarios = PythonOperator(
         task_id='descarga_datos_diarios',
-        python_callable=dd.request_diario(),
+        python_callable=dd.request_diario,
         op_args=[STORE_DIR],
     )
     crear_csv = PythonOperator(
         task_id='crear_csv',
-        python_callable=jr.crear_csv(),
+        python_callable=jr.crear_csv,
         op_args=[STORE_DIR],
     )
 
