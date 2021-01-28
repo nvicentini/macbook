@@ -10,6 +10,7 @@ pandas = "^1.2.0"
 requests = "^2.20.0"
 jsonlines = "^1.2.0"
 apache-airflow = "^2.0.0"
+lifelines = "^0.25.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
