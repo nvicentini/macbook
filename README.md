@@ -11,6 +11,7 @@ It's a simple ETL.
 - Loads -> it populates a Postgres database for further analysis (coming soon).
 
 ## how to use it.
-- sudo snap install docker
+- `sudo snap install docker`
 - clone this repositorie
-- $ sudo docker-compose up
+```bash
+sudo docker-compose up```
