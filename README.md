@@ -13,5 +13,4 @@ It's a simple ETL.
 ## how to use it.
 - `sudo snap install docker`
 - clone this repositorie
-```bash
-sudo docker-compose up```
+- `$ sudo docker-compose up`
