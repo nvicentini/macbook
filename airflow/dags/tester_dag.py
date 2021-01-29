@@ -6,6 +6,7 @@ from pathlib import Path
 
 from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
+from pendulum import today
 
 import datos_diarios as dd
 import json_reader as jr
@@ -15,9 +16,9 @@ Path.mkdir(STORE_DIR, exist_ok=True, parents=True)
 
 
 
-default_args = {'owner': 'Nico', 'retries': 0, 'start_date': datetime(2021, 1, 1)}
+default_args = {'owner': 'Nico', 'retries': 0, 'start_date': datetime(today)}
 with DAG(
-    'random_number', default_args=default_args, schedule_interval='0 0 * * *'
+    'Descarga y csv diario', default_args=default_args, schedule_interval='0 0 * * *'
 ) as dag:
     descarga_datos_diarios = PythonOperator(
         task_id='descarga_datos_diarios',
