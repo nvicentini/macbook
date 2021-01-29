@@ -17,7 +17,7 @@ Path.mkdir(STORE_DIR, exist_ok=True, parents=True)
 
 default_args = {'owner': 'Nico', 'retries': 0, 'start_date': datetime(2021, 1, 28)}
 with DAG(
-    'Descarga y csv diario', default_args=default_args, schedule_interval='0 0 * * *'
+    'descarga_y_csv_diario', default_args=default_args, schedule_interval='0 0 * * *'
 ) as dag:
     descarga_datos_diarios = PythonOperator(
         task_id='descarga_datos_diarios',
